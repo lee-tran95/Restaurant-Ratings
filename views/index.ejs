@@ -1,0 +1,16 @@
+<h1>Current Restaurants and Ratings</h1>
+    <ul class="restaurants">
+    <% for(let i = 0; i < restaurants.length; i++){%>
+        <li class = 'restaurant'>
+            <span><%= restaurants[i].name%></span>
+            <span><%= restaurants[i].rating%></span>
+        </li>
+    <%} %>
+    </ul>
+
+    <h2>Add A Restaurant:</h2>
+    <form action = '/addRestaurant' method="POST">
+        <input type="text" placeholder="restaurant name" name="name">
+        <input type="text" placeholder="rating from 1-5" name="rating">
+        <button type="submit">Submit</button>
+    </form>

@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express')
 const app = express();
 const PORT = 8000;
@@ -20,10 +21,18 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
         db = client.db(dbName)
     })
 
-    app.get('/',(req,response)=>{
+    app.get('/',(req,res)=>{
         db.collection(dbName).find().toArray()
         .then(data =>{
-            response.render('index.ejs', {info : data})
+            res.render('index.ejs', {restaurants : data})
         })
         .catch(error => console.log(error))
+    })
+
+    app.post('/addRestaurant',(req,res) =>{
+        db.collection(dbName).insertOne(req.body)
+        .then(result =>{
+            console.log('Restaurant added')
+            res.redirect('/')
+        })
     })
