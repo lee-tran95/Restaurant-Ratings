@@ -7,12 +7,13 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({extended : true}))
 app.use(express.json())
+require('dotenv').config();
 app.listen(process.env.PORT || PORT, () =>{
     console.log(`server is running on ${PORT}`)
 })
 
 let db,
-    dbConnectionStr = 'mongodb+srv://leelu:Restaurantrating2@cluster0.7re0qu7.mongodb.net/?retryWrites=true&w=majority',
+    dbConnectionStr = process.env.DB_STRING
     dbName = 'restaurants'
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
@@ -36,3 +37,5 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
             res.redirect('/')
         })
     })
+
+    
