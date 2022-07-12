@@ -41,7 +41,7 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     app.put('/increaseRating',(req,res) =>{
         db.collection(dbName).updateOne({name: req.body.restaurantNameS, rating: req.body.ratingS},{
             $set: {
-                rating: req.body.ratingS + 1
+                rating: Math.min(req.body.ratingS + 1, 5)
             }
         },{
             upsert:true
@@ -49,6 +49,21 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
         .then(result =>{
             console.log('rating updated!')
             res.json('info updated')
+        })
+        .catch(error => console.log(error))
+    })
+
+    app.put('/decreaseRating',(req,res)=>{
+        db.collection(dbName).updateOne({name: req.body.restaurantNameS, rating: req.body.ratingS},{
+            $set:{
+                rating: Math.max(req.body.ratingS - 1, 1)
+            }
+        },{
+            upsert:true
+        })
+        .then(result =>{
+            console.log('rating updated!')
+            res.json('rating decreased')
         })
         .catch(error => console.log(error))
     })
