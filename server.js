@@ -68,4 +68,13 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
         .catch(error => console.log(error))
     })
 
+    app.delete('/deleteRestaurant',(req,res)=>{
+        db.collection(dbName).deleteOne({name: req.body.restaurantNameS, rating: req.body.ratingS})
+        .then(result =>{
+            console.log('Restaurant deleted')
+            res.json('Restaurant deleted')
+        })
+        .catch(error => console.log(error))
+    })
+
     
