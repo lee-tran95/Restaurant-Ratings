@@ -11,6 +11,7 @@ Array.from(thumbsDown).forEach(element =>{
 Array.from(trash).forEach(element =>{
     element.addEventListener('click', deleteRestaurant)
 })
+
 async function increaseRating(){
     const rName = this.parentNode.childNodes[1].innerText
     const rating = Number(this.parentNode.childNodes[3].innerText)

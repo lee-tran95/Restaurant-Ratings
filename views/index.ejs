@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href = 'css/styles.css'>
 </head>
 <body>
+    
     <h1>Current Restaurants and Ratings</h1>
     <ul class="restaurants">
     <% for(let i = 0; i < restaurants.length; i++){%>
         <li class = 'restaurant'>
-            <span contenteditable="true"><%= restaurants[i].name%></span>
-            <span contenteditable="true"><%= restaurants[i].rating%></span>
+            <span><%= restaurants[i].name%></span>
+            <span><%= restaurants[i].rating%></span>
             <span class="fa-solid fa-thumbs-up"></span>
             <span class="fa-solid fa-thumbs-down"></span>
             <span class='fa fa-trash'></span>
         </li>
     <%} %>
     </ul>
-
-    <h2>Add A Restaurant:</h2>
-    <form action = '/addRestaurant' method="POST">
-        <input type="text" placeholder="restaurant name" name="name">
-        <input type="number" placeholder="rating from 1-5" name="rating">
-        <button type="submit">Submit</button>
-    </form>
+    <div class = "formSub">
+        <h2>Add A Restaurant:</h2>
+        <form action = '/addRestaurant' method="POST">
+            <input type="text" placeholder="Restaurant Name" name="name">
+            <input type="number" placeholder="Rating from 1-5" name="rating">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <script src='js/main.js'></script>
 </body>
 </html>
