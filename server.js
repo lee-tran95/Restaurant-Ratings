@@ -1,15 +1,14 @@
 const { response } = require('express');
 const express = require('express')
 const app = express();
-const PORT = 8000;
 const MongoClient = require('mongodb').MongoClient
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({extended : true}))
 app.use(express.json())
 require('dotenv').config();
-app.listen(process.env.PORT || PORT, () =>{
-    console.log(`server is running on ${PORT}`)
+app.listen(process.env.PORT || 8000, () =>{
+    console.log(`server is running on ${8000}`)
 })
 
 let db,
