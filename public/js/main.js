@@ -14,7 +14,7 @@ Array.from(trash).forEach(element =>{
 
 async function increaseRating(){
     const rName = this.parentNode.childNodes[1].innerText
-    const rating = Number(this.parentNode.childNodes[3].innerText)
+    const rating = this.parentNode.childNodes[3].innerText
     try{
         const response = await fetch('increaseRating',{
             method: 'put',
@@ -34,7 +34,7 @@ async function increaseRating(){
 
 async function decreaseRating(){
     const rName = this.parentNode.childNodes[1].innerText
-    const rating = Number(this.parentNode.childNodes[3].innerText)
+    const rating = this.parentNode.childNodes[3].innerText
     try{
         const response = await fetch('decreaseRating',{
             method: 'put',
@@ -52,7 +52,7 @@ async function decreaseRating(){
 
 async function deleteRestaurant(){
     const rName = this.parentNode.childNodes[1].innerText;
-    const rating = Number(this.parentNode.childNodes[3].innerText)
+    const rating = this.parentNode.childNodes[3].innerText;
     try{
         const response = await fetch('deleteRestaurant',{
             method: 'delete',

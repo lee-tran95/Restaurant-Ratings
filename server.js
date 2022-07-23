@@ -8,6 +8,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended : true}))
 app.use(express.json())
 require('dotenv').config();
+
 app.listen(process.env.PORT || PORT, () =>{
     console.log(`server is running on ${PORT}`)
 })
@@ -41,10 +42,10 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     app.put('/increaseRating',(req,res) =>{
         db.collection(dbName).updateOne({name: req.body.restaurantNameS, rating: req.body.ratingS},{
             $set: {
-                rating: Math.min(req.body.ratingS + 1, 5)
+                rating: String(Math.min(req.body.ratingS + 1, 5))
             }
         },{
-            upsert:true
+            upsert:false
         })
         .then(result =>{
             console.log('rating updated!')
@@ -56,10 +57,10 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     app.put('/decreaseRating',(req,res)=>{
         db.collection(dbName).updateOne({name: req.body.restaurantNameS, rating: req.body.ratingS},{
             $set:{
-                rating: Math.max(req.body.ratingS - 1, 1)
+                rating: String(Math.max(req.body.ratingS - 1, 1))
             }
         },{
-            upsert:true
+            upsert:false
         })
         .then(result =>{
             console.log('rating updated!')
