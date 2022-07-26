@@ -5,6 +5,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     margin:0;
+    color: white;
 }
 h1{
     text-align: center;
@@ -18,18 +19,29 @@ h1{
 .restaurant{
     font-size: 30px
 }
-.formSub{
+/* .formSub{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
-}
+} */
 h2{
-    text-align: center;
     margin-top: auto;
 }
 form{
+    height: 4rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid black
+    flex-direction: row;
+    border: 5px solid white;
+    flex-wrap: wrap;
+    width: 25%
+}
+.textField{
+    width: 100%
+}
+.ratingField{
+    flex: 3;
+}
+
+.submitButton{
+    flex: 1;
 }
