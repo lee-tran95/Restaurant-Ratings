@@ -32,10 +32,17 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     })
 
     app.post('/addRestaurant',(req,res) =>{
-        db.collection(dbName).insertOne(req.body)
+        db.collection(dbName).countDocuments({name: req.body.name})
         .then(result =>{
-            console.log('Restaurant added')
-            res.redirect('/')
+            if(result === 0){
+                db.collection(dbName).insertOne(req.body)
+                .then(result =>{
+                    console.log('Restaurant added')
+                    res.redirect('/')
+                })
+            }else{
+                res.redirect('/');
+            }
         })
     })
 

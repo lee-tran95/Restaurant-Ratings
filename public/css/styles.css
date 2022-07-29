@@ -1,11 +1,11 @@
 body{
-    background: url(/img/cozy-empty-restaurant.jpg) no-repeat center center fixed;
-    background-size: cover;
+    /* background: url(/img/cozy-empty-restaurant.jpg) no-repeat center center fixed;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin:0;
-    color: white;
+    color: black;
 }
 h1{
     text-align: center;
@@ -17,20 +17,20 @@ h1{
 }
 
 .restaurant{
-    font-size: 30px
+    display:flex;
+    flex-direction: column;
+    font-size: 30px;
 }
-/* .formSub{
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-} */
+.comment{
+    font-size: 20px;
+}
 h2{
     margin-top: auto;
 }
 form{
     display: flex;
     flex-direction: row;
-    border: 5px solid white;
+    border: 5px solid black;
     flex-wrap: wrap;
     width: 25%;
 }
