@@ -5,41 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <link rel="stylesheet" href = 'css/styles.css'>
 </head>
 <body>
-    <nav class="topNav">
-        <ul>
-            <li><a href = "/">Home</a></li>
-            <li><a href = "#">Login</a></li>
-        </ul>
-    </nav>
-
-    <h1>Current Restaurants and Ratings</h1>
-    <ul class="restaurants">
-    <% for(let i = 0; i < restaurants.length; i++){%>
-        <li class = 'restaurant'>
-            <div>
-                <span><%= restaurants[i].name%></span>
-                <span><%= restaurants[i].rating%></span>
-                <span class="fa-solid fa-thumbs-up"></span>
-                <span class="fa-solid fa-thumbs-down"></span>
-                <span class='fa fa-trash'></span>
-            </div>
-            <span class = 'comment'><%= restaurants[i].comments%></span>
-        </li>
-    <%} %>
-    </ul>
-    <div class = "formSub">
-        <h2>Add A Restaurant:</h2>
-        <form action = '/addRestaurant' method="POST">
-            <input class = "textField" type="text" placeholder="Restaurant Name" name="name">
-            <textarea class = "commentField" type ="text" placeholder="Comments" name = "comments"></textarea>
-            <input class = "ratingField" type="text" placeholder="Rating from 1-5" name="rating">
-            <button class = "submitButton"type="submit">Submit</button>
-        </form>
-    </div>
-    <script src='js/main.js'></script>
+    <h1>Create A Todo List By Clicking The Button Below</h1>
+    <a href="/todos"> New Todo List</a>
 </body>
 </html>
