@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended : true}))
 app.use(express.json())
 
 app.use('/',homeRoutes)
-// app.use('/',restaurantRoutes)
+app.use('/restaurant',restaurantRoutes)
 
 app.listen(process.env.PORT, () =>{
     console.log(`server is running`)
