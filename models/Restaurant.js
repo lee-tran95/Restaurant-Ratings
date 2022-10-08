@@ -7,7 +7,7 @@ const RestaurantSchema = new mongoose.Schema({
   },
   votes: {
     type: String,
-    required: true,
+    required: false,
   },
   comments: {
     type: String,

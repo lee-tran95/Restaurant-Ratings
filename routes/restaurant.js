@@ -4,4 +4,6 @@ const restaurantController = require('../controllers/restaurant')
 
 router.get('/', restaurantController.getIndex)
 
+router.post('/addRestaurant', restaurantController.addRestaurant)
+
 module.exports = router
