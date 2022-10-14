@@ -11,7 +11,12 @@ module.exports = {
     },
     addRestaurant: async (req,res) =>{
         try{
-            await Restaurant.create({restaurantName: req.body.restaurantname, comments: req.body.comments, ratings: req.body.rating})
+            await Restaurant.create({restaurantName: 
+                req.body.restaurantname, 
+                comments: req.body.comments, 
+                ratings: req.body.rating,
+                votes: '1'
+            })
             console.log('restaurant added')
             res.redirect('/restaurant')
         }catch(err){
