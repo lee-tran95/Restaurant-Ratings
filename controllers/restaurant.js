@@ -31,5 +31,16 @@ module.exports = {
         }catch(err){
             console.log(err)
         }
+    },
+    increaseVote: async(req,res) =>{
+        try{
+            await Restaurant.findOneAndUpdate({_id:req.body._restaurantId},{
+                $inc: {votes: 1}
+            })
+            console.log('Vote increased')
+            res.json('Vote increased')
+        }catch(err){
+            console.log(err)
+        }
     }
 }

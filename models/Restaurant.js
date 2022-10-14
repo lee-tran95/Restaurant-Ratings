@@ -1,3 +1,4 @@
+const { Int32 } = require('mongodb')
 const mongoose = require('mongoose')
 
 const RestaurantSchema = new mongoose.Schema({
@@ -10,8 +11,8 @@ const RestaurantSchema = new mongoose.Schema({
     required: true,
   },
   votes: {
-    type: String,
-    required: false,
+    type: Number,
+    required: true,
   },
   comments: {
     type: String,
