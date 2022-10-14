@@ -5,6 +5,10 @@ const RestaurantSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  ratings: {
+    type: String,
+    required: true,
+  },
   votes: {
     type: String,
     required: false,

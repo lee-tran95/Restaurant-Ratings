@@ -19,9 +19,10 @@
     <h1>Current Restaurants and Ratings</h1>
     <ul class="restaurants">
     <% for(let i = 0; i < restaurants.length; i++){%>
-        <li class = 'restaurant'>
-            <div>
+        <li class = 'restaurant' data-id='<%=restaurants[i]._id%>'>
+            <div data-id='<%=restaurants[i]._id%>'>
                 <span><%= restaurants[i].restaurantName%></span>
+                <span> rating: <%= restaurants[i].ratings%></span>
                 <span><%= restaurants[i].votes%></span>
                 <span class="fa-solid fa-thumbs-up"></span>
                 <span class="fa-solid fa-thumbs-down"></span>
@@ -37,6 +38,7 @@
         <form action = '/restaurant/addRestaurant' method="POST">
             <input class = "textField" type="text" placeholder="Restaurant Name" name="restaurantname">
             <textarea class = "commentField" type ="text" placeholder="Comments" name = "comments"></textarea>
+            <input class = "ratingField" type="text" placeholder="Rating from 1-5" name="rating">
             <button class = "submitButton"type="submit">Submit</button>
         </form>
         

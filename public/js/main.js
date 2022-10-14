@@ -51,15 +51,14 @@ async function decreaseRating(){
 }
 
 async function deleteRestaurant(){
-    const rName = this.parentNode.childNodes[1].innerText;
-    const rating = this.parentNode.childNodes[3].innerText;
+    const restaurantId = this.parentNode.dataset.id
+    console.log(restaurantId)
     try{
-        const response = await fetch('deleteRestaurant',{
+        const response = await fetch('/restaurant/deleteRestaurant',{
             method: 'delete',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                'restaurantNameS': rName,
-                'ratingS': rating
+                '_restaurantId': restaurantId
             })
         })
         const data = await response.json()

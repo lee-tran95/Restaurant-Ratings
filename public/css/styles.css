@@ -44,7 +44,6 @@ h1{
     flex-direction: column;
     font-size: 30px;
     flex:1 0 33%;
-    border: 1px solid blue;
     margin: 1px;
 }
 .comment{
