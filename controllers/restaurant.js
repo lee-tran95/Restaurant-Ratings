@@ -11,8 +11,8 @@ module.exports = {
     },
     addRestaurant: async (req,res) =>{
         try{
-            await Restaurant.create({restaurantName: 
-                req.body.restaurantname, 
+            await Restaurant.create({
+                restaurantName: req.body.restaurantname, 
                 comments: req.body.comments, 
                 ratings: req.body.rating,
                 votes: '1'
