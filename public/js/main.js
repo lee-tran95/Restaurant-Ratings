@@ -6,7 +6,7 @@ Array.from(thumbsUp).forEach(element =>{
     element.addEventListener('click', increaseVote)
 })
 Array.from(thumbsDown).forEach(element =>{
-    element.addEventListener('click', decreaseRating)
+    element.addEventListener('click', decreaseVote)
 })
 Array.from(trash).forEach(element =>{
     element.addEventListener('click', deleteRestaurant)
@@ -28,16 +28,14 @@ async function increaseVote(){
     }catch(err){ console.log(err)}
 }
 
-async function decreaseRating(){
-    const rName = this.parentNode.childNodes[1].innerText
-    const rating = this.parentNode.childNodes[3].innerText
+async function decreaseVote(){
+    const restaurantId = this.parentNode.dataset.id
     try{
-        const response = await fetch('decreaseRating',{
+        const response = await fetch('/restaurant/decreaseVote',{
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                'restaurantNameS':rName,
-                'ratingS': rating
+                '_restaurantId':restaurantId
             })
         })
         const data = await response.json()

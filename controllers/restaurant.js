@@ -42,5 +42,16 @@ module.exports = {
         }catch(err){
             console.log(err)
         }
+    },
+    decreaseVote: async(req,res) =>{
+        try{
+            await Restaurant.findOneAndUpdate({_id:req.body._restaurantId, votes:{$gt: 1}},{
+                $inc: {votes: -1}
+            })
+            console.log('Vote decreased')
+            res.json('Vote decreased')
+        }catch(err){
+            console.log(err)
+        }
     }
 }

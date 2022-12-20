@@ -10,4 +10,6 @@ router.delete('/deleteRestaurant', restaurantController.deleteRestaurant)
 
 router.put('/increaseVote', restaurantController.increaseVote)
 
+router.put('/decreaseVote', restaurantController.decreaseVote)
+
 module.exports = router
