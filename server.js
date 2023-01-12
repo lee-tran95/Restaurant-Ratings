@@ -21,66 +21,6 @@ app.listen(process.env.PORT, () =>{
     console.log(`server is running`)
 })
 
-    // app.get('/',(req,res)=>{
-    //     db.collection(dbName).find().toArray()
-    //     .then(data =>{
-    //         res.render('index.ejs', {restaurants : data})
-    //     })
-    //     .catch(error => console.log(error))
-    // })
 
-    // app.post('/addRestaurant',(req,res) =>{
-    //     db.collection(dbName).countDocuments({name: req.body.name})
-    //     .then(result =>{
-    //         if(result === 0){
-    //             db.collection(dbName).insertOne(req.body)
-    //             .then(result =>{
-    //                 console.log('Restaurant added')
-    //                 res.redirect('/')
-    //             })
-    //         }else{
-    //             res.redirect('/');
-    //         }
-    //     })
-    // })
-
-    // app.put('/increaseRating',(req,res) =>{
-    //     db.collection(dbName).updateOne({name: req.body.restaurantNameS, rating: req.body.ratingS},{
-    //         $set: {
-    //             rating: String(Math.min(Number(req.body.ratingS) + 1, 5))
-    //         }
-    //     },{
-    //         upsert:false
-    //     })
-    //     .then(result =>{
-    //         console.log('rating updated!')
-    //         res.json('info updated')
-    //     })
-    //     .catch(error => console.log(error))
-    // })
-
-    // app.put('/decreaseRating',(req,res)=>{
-    //     db.collection(dbName).updateOne({name: req.body.restaurantNameS, rating: req.body.ratingS},{
-    //         $set:{
-    //             rating: String(Math.max(Number(req.body.ratingS) - 1, 1))
-    //         }
-    //     },{
-    //         upsert:false
-    //     })
-    //     .then(result =>{
-    //         console.log('rating updated!')
-    //         res.json('rating decreased')
-    //     })
-    //     .catch(error => console.log(error))
-    // })
-
-    // app.delete('/deleteRestaurant',(req,res)=>{
-    //     db.collection(dbName).deleteOne({name: req.body.restaurantNameS, rating: req.body.ratingS})
-    //     .then(result =>{
-    //         console.log('Restaurant deleted')
-    //         res.json('Restaurant deleted')
-    //     })
-    //     .catch(error => console.log(error))
-    // })
 
     
