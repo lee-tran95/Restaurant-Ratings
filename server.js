@@ -3,6 +3,7 @@ const connectDB = require('./config/database');
 const app = express();
 const homeRoutes = require('./routes/home')
 const restaurantRoutes = require('./routes/restaurant')
+const authRoutes = require('./routes/auth')
 
 require('dotenv').config({path: './config/.env'})
 
@@ -15,6 +16,7 @@ app.use(express.urlencoded({extended : true}))
 app.use(express.json())
 
 app.use('/',homeRoutes)
+app.use('/login',authRoutes)
 app.use('/restaurant',restaurantRoutes)
 
 app.listen(process.env.PORT, () =>{
