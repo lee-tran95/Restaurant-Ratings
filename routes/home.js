@@ -5,7 +5,7 @@ const authController = require('../controllers/auth')
 
 router.get('/',homeController.getIndex)
 router.get('/login',authController.getLoginIndex)
-router.get('/signUp',authController.getSignUpIndex)
-router.post('/signUp',authController.postSignUp)
+router.get('/signup',authController.getSignUpIndex)
+router.post('/signup',authController.postSignUp)
 
 module.exports = router
