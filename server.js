@@ -11,6 +11,8 @@ const restaurantRoutes = require('./routes/restaurant')
 
 require('dotenv').config({path: './config/.env'})
 
+require('./config/passport')(passport)
+
 connectDB()
 
 
