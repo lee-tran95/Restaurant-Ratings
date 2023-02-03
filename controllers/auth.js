@@ -26,7 +26,7 @@ module.exports = {
         req.logIn(user, (err) => {
           if (err) { return next(err) }
           req.flash('success', { msg: 'Success! You are logged in.' })
-          res.redirect(req.session.returnTo || '/todos')
+          res.redirect(req.session.returnTo || '/restaurant')
         })
       })(req, res, next)
     },
