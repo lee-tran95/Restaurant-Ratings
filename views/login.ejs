@@ -8,6 +8,16 @@
     <link rel="stylesheet" href = 'css/loginStyles.css'>
 </head>
 <body>
+    <% if (locals.messages.errors) { %>
+        <% messages.errors.forEach( el => { %>
+            <div><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
+    <% if (locals.messages.info) { %>
+        <% messages.info.forEach( el => { %>
+            <div><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
     <h1>Please Enter your login information</h1>
     <form action = '/login' method = "POST">
         <input type="email" placeholder="Email" name ="email">

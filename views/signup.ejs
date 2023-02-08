@@ -8,6 +8,11 @@
     <link rel="stylesheet">
 </head>
 <body>
+    <% if (locals.messages.errors) { %>
+        <% messages.errors.forEach( el => { %>
+            <div><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
     <h1>Please Enter your SignUp information</h1>
     <form action = '/signup' method = "POST">
         <input type ="text" placeholder="Username" name ="userName">
