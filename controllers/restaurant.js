@@ -3,7 +3,7 @@ const Restaurant = require("../models/Restaurant")
 module.exports = {
     getIndex: async (req,res) =>{
         try{
-            const restaurantList = await Restaurant.find()
+            const restaurantList = await Restaurant.find({userId: req.user.id})
             res.render('restaurants.ejs',{restaurants: restaurantList})
         }catch(err){
             console.log(err)
@@ -12,6 +12,7 @@ module.exports = {
     addRestaurant: async (req,res) =>{
         try{
             await Restaurant.create({
+                userId: req.user.id,
                 restaurantName: req.body.restaurantname, 
                 comments: req.body.comments, 
                 ratings: req.body.rating,
