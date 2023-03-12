@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href = 'css/loginStyles.css'>
+    <link rel="stylesheet" href='css/loginStyles.css'>
 </head>
 <body>
     <% if (locals.messages.errors) { %>
@@ -18,11 +18,13 @@
             <div><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <h1>Please Enter your login information</h1>
-    <form action = '/login' method = "POST">
-        <input type="email" placeholder="Email" name ="email">
-        <input type="password" placeholder="Password" name = "password">
-        <button type="submit">Login</button>
-    </form>
+    <div class="mainLogin">
+        <h1>LOGIN PLEASE</h1>
+        <form action = '/login' method = "POST">
+            <input type="email" placeholder="EMAIL" name ="email">
+            <input type="password" placeholder="PASSWORD" name = "password">
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
 </body>
 </html>
