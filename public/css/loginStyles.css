@@ -1,14 +1,22 @@
-body{
+html, body{
     margin: 0;
-    padding: 0;
     height: 100vh;
+    overflow: hidden;
+}
+body{
+    padding: 0;
     display:flex;
     justify-content: center;
     align-items: center;
     flex:1;
     background-color: #1B263B;
 }
+.mainDisplay{
+    display:flex;
+    flex:1;
+}
 .mainLogin{
+    flex: 0 1 50%;
     display:flex;
     align-self: center;
     justify-content: center;
@@ -45,4 +53,8 @@ body{
 h1{
     color:#E0E1DD;
     font-style: sans-serif;
+}
+img{
+    width: 100%;
+    opacity: 0.7;
 }
