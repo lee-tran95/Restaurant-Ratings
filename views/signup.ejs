@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="css/signupStyles.css">
 </head>
 <body>
     <% if (locals.messages.errors) { %>
@@ -13,14 +13,21 @@
             <div><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <h1>Please Enter your SignUp information</h1>
-    <form action = '/signup' method = "POST">
-        <input type ="text" placeholder="Username" name ="userName">
-        <input type="email" placeholder="Email" name ="email">
-        <input type="password" placeholder="Password" name = "password">
-        <input type="password" placeholder="Confirm Password" name = "confirmPassword">
-        <button type="submit">Login</button>
-    </form>
+    <div class="mainDisplay">
+        <div class="mainSignupLeft">
+            <img src="img/volkan-vardar-1H30uRC1plc-unsplash.jpg">
+        </div>
+        <div class="mainSignupRight">
+            <h1>Create an Account</h1>
+            <form action = '/signup' method = "POST">
+                <input type ="text" placeholder="Username" name ="userName">
+                <input type="email" placeholder="Email" name ="email">
+                <input type="password" placeholder="Password" name = "password">
+                <input type="password" placeholder="Confirm Password" name = "confirmPassword">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 
