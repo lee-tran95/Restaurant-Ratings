@@ -1,10 +1,14 @@
+body{
+    background-image: url(../img/cozy-empty-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
 .topNav ul{
     display: flex;
     flex-direction: row-reverse;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
     overflow: hidden;
 }
 
