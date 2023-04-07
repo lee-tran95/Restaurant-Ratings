@@ -1,10 +1,27 @@
 body{
-    background-image: url(../img/cozy-empty-restaurant.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    padding: 50px;
+    background-color: #1B263B
+}
+header{
+    position: relative;
+
+}
+header h3{
+    color: #E0E1DD;
+    font-size: 34px;
+    margin: auto 0;
+}
+.topNav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
 }
 .topNav ul{
     display: flex;
+    flex: 1;
     flex-direction: row-reverse;
     list-style-type: none;
     margin: 0;
@@ -12,15 +29,15 @@ body{
     overflow: hidden;
 }
 
-.topNav ul li a{
+.topNav a{
     float: left;
-    color: #f2f2f2;
+    color: #E0E1DD;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 .topNav ul li a:hover{
-    background-color: #ddd;
+    background-color: #E0E1DD;
     color: black;
 }
