@@ -1,13 +1,20 @@
 body{
+    display: flex;
+    flex-direction: column;
     padding: 50px;
-    background-color: #1B263B
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-image: url(../img/Frame_3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 header{
     position: relative;
 
 }
 header h3{
-    color: #E0E1DD;
+    color: #1B263B;
     font-size: 34px;
     margin: auto 0;
 }
@@ -31,7 +38,7 @@ header h3{
 
 .topNav a{
     float: left;
-    color: #E0E1DD;
+    color: #1B263B;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,4 +47,25 @@ header h3{
 .topNav ul li a:hover{
     background-color: #E0E1DD;
     color: black;
+}
+.hook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 150px;
+}
+
+.hook h3{
+    color: #1B263B;
+    font-size: 40px;
+}
+.hook p{
+    color: #1B263B;
+    font-size: 30px;
+}
+.hook span{
+    color: #1B263B;
+    font-size: 20px;
 }
