@@ -54,5 +54,13 @@ module.exports = {
         }catch(err){
             console.log(err)
         }
+    },
+    createLink: async(req,res) =>{
+        try{
+            const userId = req.user.id
+            res.redirect(`/getPoll/${userId}`)
+        }catch(err){
+            console.log(err)
+        }
     }
 }

@@ -12,4 +12,6 @@ router.put('/increaseVote', restaurantController.increaseVote)
 
 router.put('/decreaseVote', restaurantController.decreaseVote)
 
+router.get('/createLink', restaurantController.createLink)
+
 module.exports = router
