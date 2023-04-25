@@ -15,7 +15,7 @@ Array.from(trash).forEach(element =>{
 async function increaseVote(){
     const restaurantId = this.parentNode.dataset.id
     try{
-        const response = await fetch('/restaurant/increaseVote',{
+        const response = await fetch('/poll/increaseVote',{
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -31,7 +31,7 @@ async function increaseVote(){
 async function decreaseVote(){
     const restaurantId = this.parentNode.dataset.id
     try{
-        const response = await fetch('/restaurant/decreaseVote',{
+        const response = await fetch('/poll/decreaseVote',{
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

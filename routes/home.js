@@ -9,6 +9,5 @@ router.post('/login', authController.postLogin)
 router.get('/signup',authController.getSignUpIndex)
 router.post('/signup',authController.postSignUp)
 router.get('/logout',authController.logout)
-router.get('/getPoll/:userId', homeController.getPoll)
 
 module.exports = router

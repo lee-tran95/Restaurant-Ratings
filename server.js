@@ -8,6 +8,7 @@ const flash = require('express-flash')
 const app = express();
 const homeRoutes = require('./routes/home')
 const restaurantRoutes = require('./routes/restaurant')
+const pollRoutes = require('./routes/poll')
 
 require('dotenv').config({path: './config/.env'})
 
@@ -35,6 +36,7 @@ app.use(flash())
 
 app.use('/',homeRoutes)
 app.use('/restaurant',restaurantRoutes)
+app.use('/poll', pollRoutes)
 
 app.listen(process.env.PORT, () =>{
     console.log(`server is running`)

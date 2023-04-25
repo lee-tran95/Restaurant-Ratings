@@ -33,32 +33,10 @@ module.exports = {
             console.log(err)
         }
     },
-    increaseVote: async(req,res) =>{
-        try{
-            await Restaurant.findOneAndUpdate({_id:req.body._restaurantId},{
-                $inc: {votes: 1}
-            })
-            console.log('Vote increased')
-            res.json('Vote increased')
-        }catch(err){
-            console.log(err)
-        }
-    },
-    decreaseVote: async(req,res) =>{
-        try{
-            await Restaurant.findOneAndUpdate({_id:req.body._restaurantId, votes:{$gt: 1}},{
-                $inc: {votes: -1}
-            })
-            console.log('Vote decreased')
-            res.json('Vote decreased')
-        }catch(err){
-            console.log(err)
-        }
-    },
     createLink: async(req,res) =>{
         try{
             const userId = req.user.id
-            res.redirect(`/getPoll/${userId}`)
+            res.redirect(`/poll/${userId}`)
         }catch(err){
             console.log(err)
         }
