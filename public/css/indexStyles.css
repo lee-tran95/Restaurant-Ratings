@@ -1,25 +1,48 @@
 body{
     display: flex;
-    flex-direction: column;
-    padding: 50px;
+    flex-direction: row;
+    padding: 50px 0;
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background: linear-gradient(to right, white 40%, orange 40% 60%);
+    background: linear-gradient(to right, white 40%, orange 40% 100%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+.left{
+    margin: 0;
+    width: 40%;
+}
+
+.right{
+    margin: 0;
+    width: 60%;
+}
+
 header{
     position: relative;
+    display: flex;
+
 
 }
-header h3{
-    color: #1B263B;
-    font-size: 34px;
+
+h3{
+    color: orange;
+    text-align: center;
+    font-size: 3.5vw;
     margin: auto 0;
+    width: 40%;
+    flex:1;
 }
+
+h3:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
 .topNav{
-    position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
@@ -44,10 +67,12 @@ header h3{
     text-decoration: none;
     font-size: 17px;
 }
+
 .topNav ul li a:hover{
     background-color: #E0E1DD;
     color: black;
 }
+
 .hook{
     display: flex;
     flex-direction: column;
@@ -61,11 +86,29 @@ header h3{
     color: #1B263B;
     font-size: 40px;
 }
+
 .hook p{
     color: #1B263B;
     font-size: 30px;
 }
+
 .hook span{
     color: #1B263B;
     font-size: 20px;
 }
+
+/* @media screen and (min-width: 1200px) {
+    .left > header > h3 {
+      font-size: 34px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .left > header > h3 {
+      font-size: 17px;
+    }
+  }
+@media screen and (max-width: 320px) {
+    .left > header > h3 {
+      font-size: 8px;
+    }
+  } */
