@@ -5,7 +5,7 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background-image: url(../img/Frame_3.png);
+    background: linear-gradient(to right, white 40%, orange 40% 60%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
