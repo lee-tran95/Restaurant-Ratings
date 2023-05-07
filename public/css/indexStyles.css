@@ -9,15 +9,16 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
     margin: 0;
-    background: linear-gradient(to right, white 40%, orange 40% 100%);
+    background: linear-gradient(to right, white 40%, #F1A661 40% 100%);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 header{
     display: flex;
     flex-direction: row;
+    padding-top: 50px;
 }
 .left{
     margin: 0;
@@ -35,12 +36,14 @@ header{
 }
 
 h2{
-    color: orange;
+    color: #E38B29;
     text-align: center;
     font-size: 3.5vw;
     margin: auto 0;
     width: 40%;
     flex:1;
+    padding-top: 10px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h2:after{
@@ -69,36 +72,115 @@ h2:after{
 
 .topNav a{
     float: left;
-    color: orange;
+    color: #E38B29;
     text-align: center;
     padding: .5em 3em;
     text-decoration: none;
     font-size: 2.0vw;
     background-color: #E0E1DD;
     border-radius: 25px;
+    font-family: 'Lato', sans-serif;
 }
 
 .topNav ul li a:hover{
     color: black;
 }
 
-.hook{
+.content {
     display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: .5em 3em;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+img {
+    max-width: 60vw;
+    height: 70vh;
+    padding-left: 5em;
+    flex: 1;
+    overflow:hidden;
+}
+
+
+.hook{
+    align-self: start;
+    width: 35vw;
+    height: 30vh;
+    padding: 0 3em;
     margin-left: auto;
-    background-color: #E0E1DD;
-    border-radius: 25px;
 }
 
 .hook h3{
-    color: #1B263B;
-    font-size: 4rem;
+    text-align: center;
+    color: #E0E1DD;
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .hook p{
-    color: #1B263B;
-    font-size: 2rem;
+    color: #E38B29;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.cta{
+    border-radius: 25px;
+    background-color: #FDEEDC;
+    padding: .5em 3em;
+}
+span{
+    color: #E38B29;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;  
 }
 
+
+@media (max-width: 480px) {
+    header {
+        padding-top: 20px;
+    }
+    h2{
+        padding-top: 2px;
+    }
+    img {
+        height: 80vh;
+    }
+    .hook h3{
+        font-size: 2rem;
+    }
+    
+    .hook p{
+        font-size: 1rem;
+    }
+}
+  
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    header {
+        padding-top: 24px;
+    }
+    h2{
+        padding-top: 2px;
+    }
+    img{
+        height: 80vh;
+    }
+    .hook h3{
+        font-size: 4rem;
+    }
+    
+    .hook p{
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .hook h3{
+        font-size: 4rem;
+    }
+    
+    .hook p{
+        font-size: 2rem;
+    }
+}
