@@ -15,7 +15,7 @@ body{
     background: linear-gradient(to right, white 40%, #F1A661 40% 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 header{
@@ -93,11 +93,10 @@ h2:after{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: nowrap;
 }
 
 img {
-    max-width: 60vw;
+    width: 60vw;
     height: 70vh;
     padding-left: 5em;
     flex: 1;
@@ -108,7 +107,7 @@ img {
 .hook{
     align-self: start;
     width: 35vw;
-    height: 30vh;
+    min-height: 30vh;
     padding: 0 3em;
     margin-left: auto;
 }
@@ -139,8 +138,58 @@ span{
     font-weight: bold;  
 }
 
+@media (max-width: 1400px) {
+    .hook h3{
+        font-size: 5.5rem;
+    }
+    
+    .hook p{
+        font-size: 2.5rem;
+    }
+}
 
-@media (max-width: 480px) {
+@media screen and (max-width: 1200px) {
+    header {
+        padding-top: 30px;
+    }
+    h2{
+        padding-top: 4px;
+    }
+    img{
+        min-height: 80vh;
+    }
+    .hook h3{
+        font-size: 5rem;
+    }
+    
+    .hook p{
+        font-size: 2.5rem;
+    }
+}
+
+
+/* @media screen and (max-width: 1100px) {
+    header {
+        padding-top: 24px;
+    }
+    h2{
+        padding-top: 2px;
+    }
+    img {
+        min-height: 80vh;
+        padding-left: 3em;
+    }
+    .hook h3{
+        font-size: 5rem;
+    }
+    
+    .hook p{
+        font-size: 2rem;
+    }
+} */
+  
+
+@media screen and (max-width: 992px) {
     header {
         padding-top: 20px;
     }
@@ -148,42 +197,74 @@ span{
         padding-top: 2px;
     }
     img {
-        height: 80vh;
+        min-height: 80vh;
+        padding-left: 3em;
     }
     .hook h3{
-        font-size: 2rem;
+        font-size: 4rem;
     }
     
     .hook p{
-        font-size: 1rem;
+        font-size: 2.5rem;
     }
 }
-  
 
-@media (min-width: 481px) and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     header {
-        padding-top: 24px;
+        padding-top: 15px;
     }
     h2{
         padding-top: 2px;
     }
-    img{
-        height: 80vh;
+    img {
+        min-height: 80vh;
+        padding-left: 3em;
     }
     .hook h3{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     .hook p{
-        font-size: 2rem;
+        font-size: 2.0rem;
     }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+
+@media screen and (max-width: 480px) {
+    header {
+        padding-top: 15px;
+    }
+    h2{
+        padding-top: 2px;
+    }
+    img {
+        min-height: 80vh;
+        padding-left: 3em;
+    }
     .hook h3{
-        font-size: 4rem;
+        font-size: 2rem;
     }
     
     .hook p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding-top: 15px;
+    }
+    h2{
+        padding-top: 2px;
+    }
+    img {
+        min-height: 80vh;
+        padding-left: 3em;
+    }
+    .hook h3{
         font-size: 2rem;
+    }
+    
+    .hook p{
+        font-size: 1.2rem;
     }
 }
