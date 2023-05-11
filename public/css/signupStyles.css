@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     flex:1;
-    background-color: #1B263B;
+    background-color: #F1A661;
 }
 .mainDisplay{
     display:flex;
@@ -36,32 +36,35 @@ body{
     flex-direction: column;
 }
 .mainSignupRight form input{
-    width: 88%;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
     margin: 5px;
-    background-color: transparent;
+    background-color: #FDEEDC;
     border-radius: 10px;
-    color:#E0E1DD;;
+    color:black;
+    border: none;
 }
 ::placeholder{
-    color: #E0E1DD;
+    color: #E38B29;
     font-style: sans-serif;
 }
 .mainSignupRight form button{
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 5px;
-    background-color: #E0E1DD;
-    color: #1B263B;
-    border-radius: 10px;
+    background-color: #E38B29;
+    color: #E0E1DD;
+    border-radius: 20px;
     font-size: sans-serif;
+    border: none;
 }
 h1{
+    font-size: 3rem;
     color:#E0E1DD;
     font-style: sans-serif;
 }
 img{
     max-width: 100%;
-    opacity: 0.7;
+    height: auto;
 }
 
