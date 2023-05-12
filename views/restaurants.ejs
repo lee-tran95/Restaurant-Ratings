@@ -25,7 +25,7 @@
     <div class = "formSub">
         <h2>Add A Restaurant:</h2>
 
-        <form action = '/restaurant/addRestaurant' method="POST">
+        <form class="input-form"action = '/restaurant/addRestaurant' method="POST">
             <input class = "textField" type="text" placeholder="Restaurant Name" name="restaurantname" required>
             <textarea class = "commentField" type ="text" placeholder="Comments" name = "comments"></textarea>
             <input class = "ratingField" type="number" placeholder="Rating from 1-5" name="rating" min="1" max="5" required>
@@ -33,9 +33,9 @@
         </form>
         
     </div>
-    <a href="/restaurant/createLink">
+    <form action = '/restaurant/createLink' method="GET">
         <button class="pollButton">Create a Poll</button>
-    </a>
+    </form>
     <script src='/js/main.js'></script>
 </body>
 </html>

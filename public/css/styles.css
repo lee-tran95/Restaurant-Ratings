@@ -33,7 +33,7 @@ h1{
 h2{
     margin-top: auto;
 }
-form{
+.input-form{
     display: flex;
     flex-direction: row;
     border: 5px solid black;
