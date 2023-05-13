@@ -19,7 +19,6 @@ body{
 }
 header{
     display: flex;
-    flex-direction: row;
     padding-top: 50px;
 }
 .left{
