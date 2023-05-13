@@ -51,15 +51,22 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .restaurant{
     display:flex;
-    flex-direction: column;
     font-size: 30px;
-    flex:0 0 33%;
+    flex:0 0 30%;
     padding: 1rem;
     flex-wrap: wrap;
+}
+.restaurant-item{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
 }
 .comment{
     font-size: 20px;
