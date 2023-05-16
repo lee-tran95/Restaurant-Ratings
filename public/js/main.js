@@ -1,4 +1,6 @@
-
+const showButton = document.getElementById('showDialog')
+const cancelButton = document.getElementById('closeDialog')
+const dialog = document.getElementById('addRestaurantDialog')
 const trash = document.querySelectorAll('.fa-trash')
 
 Array.from(trash).forEach(element =>{
@@ -21,3 +23,11 @@ async function deleteRestaurant(){
         location.reload()
     }catch(err){console.log(err)}
 }
+
+showButton.addEventListener('click', () => {
+    dialog.showModal()
+})
+
+cancelButton.addEventListener('click', () =>{
+    dialog.close()
+})
