@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><form action="/restaurant/logout" method="POST"> <button class="logout-button"type="submit">Logout</button></form></li>
+                    <li><form action="/restaurant/logout" method="POST"> <button class="logout-button reset-button-style"type="submit">Logout</button></form></li>
                     <li><a href="/restaurant/createLink">Create Poll</a></li>
                 </ul>
             </nav>
@@ -33,7 +33,7 @@
             </li>
         <%} %>
         </ul>
-        <button id="showDialog">Add Entry</button>
+        <button class="reset-button-style" id="showDialog">Add Entry</button>
         <dialog id="addRestaurantDialog">
             <div class = "formSub">
                 <h3>Add A Restaurant:</h2>
