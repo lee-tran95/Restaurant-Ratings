@@ -139,19 +139,19 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.name-field{
+#name-field{
     width: 100%;
 }
-.comment-field{
+#comment-field{
     width:100%;
     height: 100px;
     text-align: left;
     flex-wrap: wrap;
 }
-.rating-field{
+#rating-field{
     flex: 3;
 }
 
-.submitButton{
+#submitButton{
     flex: 1;
 }
