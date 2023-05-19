@@ -86,8 +86,14 @@ h2{
     border-radius: 10px;
     word-break: break-all;
 }
+.fa-trash{
+    padding-right: 5px;
+    padding-bottom: 5px;
+    align-self: flex-end;
+}
 
 .comment{
+    flex:1;
     font-size: 20px;
     color:black;
 }
@@ -100,9 +106,9 @@ h2{
     margin-right: 30px;
     margin-bottom: 30px;
     width: 20%;
-    position: fixed;
+    align-self: flex-end;
+    position: sticky;
     bottom: 0;
-    right: 0;
     background-color: white;
 }
 
