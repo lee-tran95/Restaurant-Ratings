@@ -108,12 +108,25 @@ h2{
     transform: translate(-50%, -50%);
     width: 50%;
     height: 50%;
+    border-radius: 10px;
+    border: transparent;
 }
 
 .formSub{
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 10px;
+}
+
+.formSub form{
+    all: initial;
+}
+
+.formSub h3{
+    color: orange;
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 .comment{
@@ -126,16 +139,16 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.textField{
+.name-field{
     width: 100%;
 }
-.commentField{
+.comment-field{
     width:100%;
     height: 100px;
     text-align: left;
     flex-wrap: wrap;
 }
-.ratingField{
+.rating-field{
     flex: 3;
 }
 

@@ -36,11 +36,11 @@
         <button class="reset-button-style" id="showDialog">Add Entry</button>
         <dialog id="addRestaurantDialog">
             <div class = "formSub">
-                <h3>Add A Restaurant:</h2>
+                <h3>Add a Restaurant:</h2>
                 <form class="input-form"action = '/restaurant/addRestaurant' method="POST">
-                    <input class = "textField" type="text" placeholder="Restaurant Name" name="restaurantname" required>
-                    <input class = "ratingField" type="number" placeholder="Rating from 1-5" name="rating" min="1" max="5" required>
-                    <textarea class = "commentField" type ="text" placeholder="Comments" name = "comments"></textarea required>
+                    <input class = "name-field" type="text" placeholder="Restaurant Name" name="restaurantname" required>
+                    <input class = "rating-field" type="number" placeholder="Rating from 1-5" name="rating" min="1" max="5" required>
+                    <textarea class = "comment-field" type ="text" placeholder="Comments" name = "comments"></textarea required>
                     <button id="closeDialog" value="cancel" formmethod="dialog">Cancel</button>
                     <button class = "submitButton"type="submit">Submit</button>
                 </form>
