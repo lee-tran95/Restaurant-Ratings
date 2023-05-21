@@ -213,3 +213,16 @@ label[for="name-field"], #name-field{
 label[for="rating-field"], #rating-field{
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 320px) {
+    h1{
+        font-size: 2rem;
+    }
+    nav{
+        display: none;
+    }
+    .restaurants{
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+}
