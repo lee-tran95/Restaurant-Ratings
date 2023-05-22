@@ -9,21 +9,23 @@
     <link rel="stylesheet" href = '/css/pollStyles.css'>
 </head>
 <body>
-    <h1>Current Restaurants and Ratings</h1>
-    <ul class="restaurants">
-    <% for(let i = 0; i < restaurants.length; i++){%>
-        <li class = 'restaurant' data-id='<%=restaurants[i]._id%>'>
-            <div data-id='<%=restaurants[i]._id%>'>
-                <span><%= restaurants[i].restaurantName%></span>
-                <span> rating: <%= restaurants[i].ratings%></span>
-                <span><%= restaurants[i].votes%></span>
-                <span class="fa-solid fa-thumbs-up"></span>
-                <span class="fa-solid fa-thumbs-down"></span>
-            </div>
-            <span class = 'comment'><%= restaurants[i].comments%></span>
-        </li>
-    <%} %>
-    </ul>
+    <div class="container">
+        <h1>Current Restaurants and Ratings</h1>
+        <ul class="restaurants">
+        <% for(let i = 0; i < restaurants.length; i++){%>
+            <li class = 'restaurant' data-id='<%=restaurants[i]._id%>'>
+                <div data-id='<%=restaurants[i]._id%>'>
+                    <span><%= restaurants[i].restaurantName%></span>
+                    <span> rating: <%= restaurants[i].ratings%></span>
+                    <span><%= restaurants[i].votes%></span>
+                    <span class="fa-solid fa-thumbs-up"></span>
+                    <span class="fa-solid fa-thumbs-down"></span>
+                </div>
+                <span class = 'comment'><%= restaurants[i].comments%></span>
+            </li>
+        <%} %>
+        </ul>
+    </div>
     <script src='/js/poll.js'></script>
 </body>
 </html>
