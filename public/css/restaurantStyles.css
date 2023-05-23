@@ -215,11 +215,17 @@ label[for="rating-field"], #rating-field{
 }
 
 @media screen and (max-width: 320px) {
+    header{
+        justify-content: space-between;
+    }
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     nav{
         display: none;
+    }
+    .fa-bars{
+        flex: 1;
     }
     .restaurants{
         flex-direction: column;

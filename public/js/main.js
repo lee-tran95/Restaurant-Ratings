@@ -2,6 +2,8 @@ const showButton = document.getElementById('showDialog')
 const cancelButton = document.getElementById('closeDialog')
 const dialog = document.getElementById('addRestaurantDialog')
 const trash = document.querySelectorAll('.fa-trash')
+const menu = document.querySelector('.fa-bars')
+const navLinks = document.querySelector('nav')
 
 Array.from(trash).forEach(element =>{
     element.addEventListener('click', deleteRestaurant)
@@ -30,4 +32,12 @@ showButton.addEventListener('click', () => {
 
 cancelButton.addEventListener('click', () =>{
     dialog.close()
+})
+
+menu.addEventListener('click',() =>{
+    if(navLinks.style.display === "none"){
+        navLinks.style.display = "block"
+    }else{
+        navLinks.style.display = "none"
+    }
 })
