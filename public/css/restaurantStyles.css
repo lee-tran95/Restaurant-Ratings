@@ -5,7 +5,6 @@
 }
 
 .container{
-    height:100vh;
     display: flex;
     flex-direction: column;
 }
@@ -63,6 +62,7 @@ h2{
     font-size: 3rem;
     background-color: orange;
     padding: 2rem;
+    margin-bottom: 10px;
 }
 
 .restaurants{
@@ -71,7 +71,6 @@ h2{
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-evenly;
-    flex: 1;
 }
 
 .restaurant{
