@@ -157,10 +157,12 @@ h2{
 .input-form{
     width: 100%;
 }
+
 label{
     color: orange;
     font-size: 2rem;
 }
+
 #name-field{
     width: 70%;
     flex:1;
@@ -169,6 +171,7 @@ label{
     height: 25px;
     border: transparent;
 }
+
 #comment-field{
     width:100%;
     height: 100px;
@@ -179,6 +182,7 @@ label{
     height: 190px;
     border: transparent;
 }
+
 #rating-field{
     background-color: rgb(230, 169, 56);
     border-radius: 5px;
@@ -256,5 +260,12 @@ label[for="rating-field"], #rating-field{
     .restaurants{
         flex-direction: column;
         flex: 1 1 auto;
+    }
+    #showDialog{
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        width: 30%;
     }
 }
