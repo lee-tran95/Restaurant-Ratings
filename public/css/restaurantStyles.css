@@ -89,7 +89,16 @@ h2{
     background-color: orange;
     border-radius: 10px;
     word-break: break-all;
+    padding: 15px 0px 5px 5px;
 }
+
+.restaurant-item span{
+    padding: 5px 0px;
+}
+.restaurant-name{
+    text-decoration: underline;
+}
+
 .fa-trash{
     padding-right: 5px;
     padding-bottom: 5px;
@@ -228,6 +237,7 @@ label[for="rating-field"], #rating-field{
     }
     nav{
         display: none;
+        background-color: lightsalmon;
     }
     nav ul{
         flex-direction: column;
@@ -235,9 +245,8 @@ label[for="rating-field"], #rating-field{
     nav ul li {
         list-style: none;
         font-size: 1rem;
-        border-radius: 10px;
-        border: 5px solid orange;
-        padding: 5px 30px;
+        border: none;
+        padding: 5px 10px;
         margin-left: 30px
     }
     .fa-bars{
