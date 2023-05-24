@@ -5,6 +5,7 @@
 }
 
 .container{
+    height:100vh;
     display: flex;
     flex-direction: column;
 }
@@ -70,6 +71,7 @@ h2{
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-evenly;
+    flex: 1;
 }
 
 .restaurant{
