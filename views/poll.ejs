@@ -25,13 +25,12 @@
         <ul class="restaurants">
         <% for(let i = 0; i < restaurants.length; i++){%>
             <li class = 'restaurant' data-id='<%=restaurants[i]._id%>'>
-                <div data-id='<%=restaurants[i]._id%>'>
+                <div class="restaurant-item"data-id='<%=restaurants[i]._id%>'>
                     <span><%= restaurants[i].restaurantName%></span>
                     <span> rating: <%= restaurants[i].ratings%></span>
                     <span><%= restaurants[i].votes%></span>
                     <span class="fa-solid fa-thumbs-up"></span>
                 </div>
-                <span class = 'comment'><%= restaurants[i].comments%></span>
             </li>
         <%} %>
         </ul>
