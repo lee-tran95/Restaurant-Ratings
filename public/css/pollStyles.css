@@ -98,3 +98,7 @@ h2{
 .restaurant-name{
     text-decoration: underline;
 }
+.vote-counts{
+    margin-left: auto;
+    margin-right: 10px;
+}

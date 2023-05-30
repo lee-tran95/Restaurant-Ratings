@@ -28,8 +28,10 @@
                 <div class="restaurant-item"data-id='<%=restaurants[i]._id%>'>
                     <span><%= restaurants[i].restaurantName%></span>
                     <span> rating: <%= restaurants[i].ratings%></span>
-                    <span><%= restaurants[i].votes%></span>
-                    <span class="fa-solid fa-thumbs-up"></span>
+                    <div class="vote-counts">
+                        <span><%= restaurants[i].votes%></span>
+                        <span class="fa-solid fa-thumbs-up"></span>
+                    </div>
                 </div>
             </li>
         <%} %>
