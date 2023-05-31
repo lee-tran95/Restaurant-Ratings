@@ -30,4 +30,15 @@ module.exports = {
             console.log(err)
         }
     },
+    resetVote: async(req,res) =>{
+        try{
+            await Restaurant.updateMany({userId: req.body._userId}, {
+                $set: {votes: 1}
+            })
+            console.log('Votes resetted')
+            res.json('Votes resetted')
+        }catch(err){
+            console.log(err)
+        }
+    }
 }

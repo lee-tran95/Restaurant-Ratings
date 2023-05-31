@@ -28,7 +28,7 @@
                 <div class="restaurant-item"data-id='<%=restaurants[i]._id%>'>
                     <span><%= restaurants[i].restaurantName%></span>
                     <span> rating: <%= restaurants[i].ratings%></span>
-                    <div class="vote-counts">
+                    <div class="vote-counts" data-id='<%=restaurants[i]._id%>'>
                         <span><%= restaurants[i].votes%></span>
                         <span class="fa-solid fa-thumbs-up"></span>
                     </div>
@@ -36,6 +36,7 @@
             </li>
         <%} %>
         </ul>
+        <button id="reset-button">Reset Votes</button>
     </div>
     <script src='/js/poll.js'></script>
 </body>
