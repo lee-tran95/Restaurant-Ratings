@@ -22,7 +22,6 @@ async function increaseVote(){
             })
         })
         const data = await response.json()
-        console.log(restaurantId)
         console.log(data)
         location.reload()
     }catch(err){ console.log(err)}
