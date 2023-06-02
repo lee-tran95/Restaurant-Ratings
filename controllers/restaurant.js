@@ -24,7 +24,7 @@ module.exports = {
                     restaurantName: req.body.restaurantname, 
                     comments: req.body.comments, 
                     ratings: req.body.rating,
-                    votes: '1'
+                    votes: '0'
                 })
                 console.log('restaurant added')
                 res.redirect('/restaurant')
