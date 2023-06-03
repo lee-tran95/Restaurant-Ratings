@@ -13,11 +13,12 @@ header{
     display: flex;
     align-items: center;
     padding: 1.5rem 1rem;
+    background-color: orange;
 }
 
 h1{
     font-size: 3.5rem;
-    color: orange;;
+    color: white;
 }
 .fa-bars{
     display: none;
@@ -35,14 +36,15 @@ nav ul{
 nav ul li {
     list-style: none;
     font-size: 2rem;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 5px solid orange;
     padding: 5px 30px;
-    margin-left: 30px
+    margin-left: 30px;
+    background-color: white;
 }
 
 a{
-    color:black;
+    color:orange;
     text-decoration: none;
 }
 .reset-button-style{
@@ -54,6 +56,7 @@ a{
     font-weight: inherit;
     line-height: inherit;
     padding: 0;
+    color: orange;
 }
 
 h2{
@@ -242,7 +245,7 @@ label[for="rating-field"], #rating-field{
     }
     nav{
         display: none;
-        background-color: lightsalmon;
+        background-color: white;
     }
     nav ul{
         flex-direction: column;
@@ -252,10 +255,10 @@ label[for="rating-field"], #rating-field{
         font-size: 1.5rem;
         border: none;
         padding: 5px 20px;
-        margin-left: 30px
     }
     .fa-bars{
         display: block;
+        color: white;
         flex: 1;
     }
     .restaurants{
@@ -281,7 +284,7 @@ label[for="rating-field"], #rating-field{
     }
     nav{
         display: none;
-        background-color: lightsalmon;
+        background-color: white;
     }
     nav ul{
         flex-direction: column;
