@@ -61,10 +61,20 @@ span{
 }
 .image{
     flex-basis: 45%;
-    height: 100vh   ;
+    height: 100vh;
     width: 80%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/Rectangle\ 8.png);
+}
+
+@media screen and (max-width:510px){
+    .mainDisplay{
+        flex-direction: column;
+    }
+    .image{
+        margin-top: 10px;
+    }
+
 }
