@@ -24,9 +24,13 @@ h1{
 .fa-bars{
     display: none;
 }
+.active{
+    display: block;
+}
 nav{
     flex: 1;
     text-align: right;
+    display: block;
 }
 
 nav ul{

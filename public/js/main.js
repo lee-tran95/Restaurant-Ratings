@@ -35,9 +35,5 @@ cancelButton.addEventListener('click', () =>{
 })
 
 menu.addEventListener('click',() =>{
-    if(navLinks.style.display === "none"){
-        navLinks.style.display = "block"
-    }else{
-        navLinks.style.display = "none"
-    }
+    navLinks.classList.toggle("active")
 })
