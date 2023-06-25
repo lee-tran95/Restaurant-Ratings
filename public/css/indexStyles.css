@@ -87,16 +87,14 @@ h2:after{
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
 }
 
 img {
-    width: 60vw;
-    height: 70vh;
     padding-left: 5em;
-    flex: 1;
+    height: auto;
+    width: 100%;
     overflow:hidden;
 }
 
@@ -135,7 +133,7 @@ span{
     font-weight: bold;  
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
     .hook h3{
         font-size: 3rem;
     }
@@ -148,6 +146,7 @@ span{
     }
     .topNav a{
         font-size: 1.5rem;
+        padding: .5em 2.7em;
     }
 }
 
@@ -161,16 +160,14 @@ span{
     }
     .topNav a{
         font-size: 1.3rem;
-    }
-    img{
-        height: 80vh;
+        padding: .5em 2.5em;
     }
     .hook h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .hook p{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 }
 
@@ -186,16 +183,12 @@ span{
     .topNav a{
         font-size: 1rem;
     }
-    img {
-        height: 80vh;
-        padding-left: 3em;
-    }
     .hook h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .hook p{
-        font-size: 1.2rem;
+        font-size: .9rem;
     }
 }
 
@@ -210,16 +203,30 @@ span{
     .topNav a{
         font-size: .8rem;
     }
-    img {
-        height: 80vh;
-        padding-left: 3em;
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .image img{
+        height: 50vh;
+        padding-right: 3em;
+        object-fit: contain;
+    }
+    .image{
+        display: flex;
+        flex: 0 1 100%;
+        height:fit-content;
+    }
+    .hook{
+        width: 100%;
+        flex: 0 0 30%;
     }
     .hook h3{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     
     .hook p{
-        font-size: .9rem;
+        font-size: .7rem;
     }
 }
 
@@ -234,7 +241,7 @@ span{
     .topNav a{
         font-size: .5rem;
     }
-    .image img{
+    /* .image img{
         height: 50vh;
         padding-right: 3em;
         object-fit: contain;
@@ -243,7 +250,7 @@ span{
         display: flex;
         flex: 0 1 100%;
         height:fit-content;
-    }
+    } */
     .hook h3{
         font-size: 2rem;
     }
@@ -255,10 +262,10 @@ span{
         flex-direction: column-reverse;
 
     }
-    .hook{
+    /* .hook{
         width: 100%;
         flex: 0 0 30%;
-    }
+    } */
 }
 
 @media screen and (max-width: 375px) {
