@@ -208,7 +208,6 @@ span{
         flex-direction: column-reverse;
     }
     .image img{
-        height: 50vh;
         padding-right: 3em;
         object-fit: contain;
     }
@@ -217,16 +216,17 @@ span{
         flex: 0 1 100%;
         height:fit-content;
     }
-    .hook{
-        width: 100%;
-        flex: 0 0 30%;
-    }
+    
     .hook h3{
         font-size: 1.2rem;
     }
     
     .hook p{
         font-size: .7rem;
+    }
+    .hook{
+        width: 100%;
+        flex: 0 0 30%;
     }
 }
 
@@ -241,7 +241,7 @@ span{
     .topNav a{
         font-size: .5rem;
     }
-    /* .image img{
+    .image img{
         height: 50vh;
         padding-right: 3em;
         object-fit: contain;
@@ -250,7 +250,7 @@ span{
         display: flex;
         flex: 0 1 100%;
         height:fit-content;
-    } */
+    }
     .hook h3{
         font-size: 2rem;
     }
@@ -262,10 +262,10 @@ span{
         flex-direction: column-reverse;
 
     }
-    /* .hook{
+    .hook{
         width: 100%;
         flex: 0 0 30%;
-    } */
+    }
 }
 
 @media screen and (max-width: 375px) {
