@@ -7,20 +7,19 @@
 .container{
     display: flex;
     flex-direction: column;
-    background-color: #f47521;
+    background-color:  #E2E8F0;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1rem;
-    background-color: #f47521;
+    background-color: white;
 }
 
 h1{
     font-size: 3.5rem;
-    color: white;
-    background-color: black;
+    color: black;
     padding: 5px 10px;
 }
 .fa-bars{
@@ -44,10 +43,10 @@ nav ul li {
     list-style: none;
     font-size: 2rem;
     border-radius: 15px;
-    border: 5px solid #f47521;
+    border: 5px solid #3d5a80;
     padding: 5px 30px;
     margin-left: 30px;
-    background-color: black;
+    background-color: #3d5a80;
 }
 
 a{
@@ -71,11 +70,10 @@ a{
 
 h2{
     text-align: center;
-    color: white;
+    color: black;
     font-size: 3rem;
-    background-color: black;
-    padding: 2rem;
-    margin-bottom: 10px;
+    background-color:  #E2E8F0;
+    padding: 1rem;
 }
 
 .restaurants{
@@ -96,14 +94,15 @@ h2{
     flex: 1;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: white;
+    box-shadow: -5px 0px #ee6c4d;
     border-radius: 10px;
     word-break: break-all;
     padding: 15px 0px 5px 5px;
 }
 
 .restaurant-item span{
-    color: white;
+    color: black;
     padding: 5px 0px;
 }
 .restaurant-name{
@@ -125,7 +124,7 @@ h2{
 #showDialog{
     font-size: 2rem;
     border-radius: 10px;
-    border: 5px solid #f47521;
+    border: 5px solid #3d5a80;
     padding: 5px 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -133,7 +132,7 @@ h2{
     align-self: flex-end;
     position: sticky;
     bottom: 0;
-    background-color: black;
+    background-color: #3d5a80;
 }
 
 #addRestaurantDialog{
@@ -145,7 +144,7 @@ h2{
     height: 60%;
     border-radius: 10px;
     border: transparent;
-    background-color: #f47521;
+    background-color: #3d5a80;
 }
 
 .formSub{
@@ -153,7 +152,7 @@ h2{
     flex-direction: column;
     margin: 0;
     padding: 15px;
-    background-color: #f47521;
+    background-color: #3d5a80;
 }
 
 .formSub form{
@@ -185,7 +184,7 @@ label{
 #name-field{
     width: 70%;
     flex:1;
-    background-color: black;
+    background-color: #98c1d9;
     border-radius: 5px;
     height: 25px;
     border: transparent;
@@ -196,14 +195,14 @@ label{
     height: 100px;
     text-align: left;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #e0fbfc;
     border-radius: 5px;
     height: 190px;
     border: transparent;
 }
 
 #rating-field{
-    background-color: black;
+    background-color: #e0fbfc;
     border-radius: 5px;
     height: 25px;
     border: transparent;
@@ -217,7 +216,7 @@ label{
     color: white;
     font-size: 2rem;
     border-radius: 20px;
-    border: 5px solid #f47521;
+    border: 5px solid #3d5a80;
     padding: 5px 30px;
     margin-right: 30px;
     margin-bottom: 20px;
