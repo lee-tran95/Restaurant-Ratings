@@ -54,6 +54,9 @@ a{
     color: white;
     text-decoration: none;
 }
+.menu{
+    align-self: center;
+}
 .reset-button-style{
     background-color: transparent;
     border-width: 0;
@@ -246,6 +249,23 @@ label[for="rating-field"], #rating-field{
     margin-bottom: 30px;
 }
 
+@media screen and (max-width:1200px){
+    h1{
+        font-size: 2rem;
+    }
+    nav ul li {
+        font-size: 1.5rem;
+        padding: 5px 20px;
+        margin-left: 30px;
+        background-color: black;
+    }
+    #showDialog{
+        padding: 5px 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 25%;
+    }
+}
 @media screen and (max-width:768px){
     header{
         justify-content: space-between;
@@ -268,13 +288,14 @@ label[for="rating-field"], #rating-field{
         border: none;
         padding: 5px 20px;
     }
+
     .fa-bars{
         display: block;
         color: white;
         flex: 1;
     }
     #showDialog{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 5px 10px;
         margin-right: 15px;
         margin-bottom: 10px;
@@ -283,10 +304,6 @@ label[for="rating-field"], #rating-field{
 }
 
 @media screen and (max-width: 375px) {
-    header{
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
     h1{
         font-size: 1.5rem;
     }
@@ -313,6 +330,5 @@ label[for="rating-field"], #rating-field{
         padding: 5px 10px;
         margin-right: 15px;
         margin-bottom: 10px;
-        width: 30%;
     }
 }
