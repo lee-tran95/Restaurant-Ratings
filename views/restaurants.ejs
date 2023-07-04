@@ -19,7 +19,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><form action="/restaurant/logout" method="POST"> <button class="logout-button reset-button-style"type="submit">Logout</button></form></li>
-                    <li><a href="/restaurant/createLink">Create Poll</a></li>
+                    <li id="create-poll"><a href="/restaurant/createLink">Create Poll</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,7 +30,7 @@
                 <div class="restaurant-item"data-id='<%=restaurants[i]._id%>'>
                     <span class="restaurant-name"><%= restaurants[i].restaurantName%></span>
                     <span class="restaurant-rating"> Rating: <%= restaurants[i].ratings%></span>
-                    <span class = 'comment'><%= restaurants[i].comments%></span>
+                    <span class ='comment'><%= restaurants[i].comments%></span>
                     <span class='fa fa-trash'></span>
                 </div>
             </li>

@@ -49,15 +49,22 @@ nav ul li {
     list-style: none;
     font-size: 2rem;
     border-radius: 15px;
-    border: 5px solid #3d5a80;
+    border: 5px solid var(--secondary-bg-color);
     padding: 5px 30px;
     margin-left: 30px;
-    background-color: #3d5a80;
+    background-color: var(--secondary-bg-color);
 }
 
 a{
-    color: white;
+    color: var(--main-text-color);
     text-decoration: none;
+}
+#create-poll{
+    background-color: var(--primary-color);
+    border: 5px solid var(--primary-color);
+}
+#create-poll a{
+    color: white;
 }
 .menu{
     align-self: center;
@@ -71,7 +78,7 @@ a{
     font-weight: inherit;
     line-height: inherit;
     padding: 0;
-    color: white;
+    color: var(--main-text-color);
 }
 
 h2{
@@ -143,6 +150,7 @@ h2{
     position: sticky;
     bottom: 0;
     background-color: #3d5a80;
+    color: white;
 }
 
 #addRestaurantDialog{
@@ -194,7 +202,7 @@ label{
 }
 
 #name-field{
-    width: 70%;
+    width: 100%;
     flex:1;
     background-color: var(--secondary-bg-color);
     border-radius: 5px;
@@ -249,11 +257,7 @@ label{
     top: 0;
 }
 
-label[for="name-field"], #name-field{
-    margin: 30px 0px;
-}
-
-label[for="rating-field"], #rating-field{
+#name-field, #rating-field{
     margin-bottom: 30px;
 }
 
@@ -265,7 +269,7 @@ label[for="rating-field"], #rating-field{
         font-size: 1.5rem;
         padding: 5px 20px;
         margin-left: 30px;
-        background-color: #3d5a80;
+        background-color: var(--secondary-bg-color);
     }
     #showDialog{
         padding: 5px 20px;
@@ -276,6 +280,12 @@ label[for="rating-field"], #rating-field{
     #submitButton{
         font-size: 1.5rem;
         padding: 5px 15px;
+    }
+    .formSub h3{
+        font-size: 2rem;
+    }
+    label{
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width:768px){
@@ -301,6 +311,7 @@ label[for="rating-field"], #rating-field{
         text-align: center;
         padding: 5px 20px;
         margin-left: 0px;
+        border-radius: 0;
     }
 
     .fa-bars{
@@ -323,6 +334,16 @@ label[for="rating-field"], #rating-field{
     .restaurants{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+    .formSub h3{
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    #addRestaurantDialog{
+        width: 75%;
+        height: 60%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -341,7 +362,7 @@ label[for="rating-field"], #rating-field{
         font-size: 1rem;
         border: none;
         padding: 5px 10px;
-        margin-left: 30px
+
     }
     .fa-bars{
         display: block;
@@ -352,5 +373,21 @@ label[for="rating-field"], #rating-field{
         padding: 5px 10px;
         margin-right: 15px;
         margin-bottom: 10px;
+    }
+    #submitButton{
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    #closeDialog{
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .formSub h3{
+        font-size: 1rem;
+    }
+    #rating-field{
+        width: 25px;
     }
 }
