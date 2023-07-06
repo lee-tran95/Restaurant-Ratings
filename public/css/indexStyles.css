@@ -70,7 +70,7 @@ h2{
     background-color:#2b3f5a;
 }
 
-.content {
+.content, .tracker {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--secondary-bg-color);
@@ -80,6 +80,8 @@ h2{
 img {
     height: 500px;
     grid-column: 1/2;
+    border-radius: 10px;
+    place-self: center;
 }
 
 
@@ -116,6 +118,16 @@ span{
     color: var(--main-text-color);
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+}
+
+.tracker{
+    background-color: var(--main-bg-color);
+}
+.tracker article{
+    grid-column: 1/2;
+}
+.tracker img{
+    grid-column: 2/3;
 }
 
 @media (max-width: 1450px) {
