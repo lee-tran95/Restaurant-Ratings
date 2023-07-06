@@ -111,7 +111,6 @@ img {
 }
 .cta{
     border-radius: 25px;
-    background-color: var(--main-bg-color);
     padding: .5em 3em;
 }
 span{
