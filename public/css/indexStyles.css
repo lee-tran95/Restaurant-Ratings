@@ -79,11 +79,12 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--secondary-bg-color);
-    padding: 2rem 15rem;
+    padding: 2rem 10rem;
+    column-gap: 10rem;
 }
 
 img {
-    height: 500px;
+    height: auto;
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 10px;
@@ -159,7 +160,7 @@ span{
     }
     
     .hook p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -180,6 +181,15 @@ span{
     .content, .tracker, .poll-features {
         display: flex;
         flex-direction: column;
+        padding: 2rem 3rem;
+    }
+    .hook{
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+    }
+    article{
+        margin-bottom: 3rem;
     }
 }
 
