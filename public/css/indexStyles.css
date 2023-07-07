@@ -139,28 +139,26 @@ span{
 }
 
 @media screen and (max-width: 1200px) {
-    header {
-        padding-top: 30px;
-    }
     h2{
         font-size: 2.5rem;
-        padding-top: 4px;
+    }
+    .topNav ul{
+        margin: 0;
     }
     .topNav a{
         font-size: 1.3rem;
-        padding: .5em 2.5em;
     }
     .hook h3{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .hook p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     header {
         padding-top: 20px;
     }
