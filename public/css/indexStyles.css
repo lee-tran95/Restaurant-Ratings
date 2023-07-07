@@ -70,7 +70,7 @@ h2{
     background-color:#2b3f5a;
 }
 
-.content, .tracker {
+.content, .tracker, .poll-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--secondary-bg-color);
@@ -127,6 +127,15 @@ span{
 }
 .tracker img{
     grid-column: 2/3;
+    width: 90%
+}
+
+.poll-features img{
+    grid-column: 1/2;
+    width: 90%
+}
+.poll-features article{
+    grid-column: 2/3
 }
 
 @media (max-width: 1450px) {
