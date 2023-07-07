@@ -82,6 +82,8 @@ img {
     grid-column: 1/2;
     border-radius: 10px;
     place-self: center;
+    object-fit: contain;
+    width: 100%;
 }
 
 
@@ -127,32 +129,13 @@ span{
 }
 .tracker img{
     grid-column: 2/3;
-    width: 90%
 }
 
 .poll-features img{
     grid-column: 1/2;
-    width: 90%
 }
 .poll-features article{
     grid-column: 2/3
-}
-
-@media (max-width: 1450px) {
-    .hook h3{
-        font-size: 3rem;
-    }
-    
-    .hook p{
-        font-size: 1.4rem;
-    }
-    h2{
-        font-size: 3rem;
-    }
-    .topNav a{
-        font-size: 1.5rem;
-        padding: .5em 2.7em;
-    }
 }
 
 @media screen and (max-width: 1200px) {
