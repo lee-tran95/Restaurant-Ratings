@@ -176,7 +176,7 @@ span{
         padding: 5px 10px;
     }
     .topNav{
-        flex: 1 0 100%
+        flex: 1 0 100%;
     }
     nav{
         display: none;
@@ -221,20 +221,6 @@ span{
     .topNav a{
         font-size: .8rem;
     }
-    .content{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .image img{
-        padding-right: 3em;
-        object-fit: contain;
-    }
-    .image{
-        display: flex;
-        flex: 0 1 100%;
-        height:fit-content;
-    }
-    
     .hook h3{
         font-size: 1.2rem;
     }
