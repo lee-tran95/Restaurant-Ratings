@@ -210,44 +210,6 @@ span{
     }
 }
 
-@media screen and (max-width: 480px) {
-    header {
-        padding-top: 15px;
-    }
-    h2{
-        font-size: 1.3rem;
-        padding-top: 2px;
-    }
-    /* .topNav a{
-        font-size: .5rem;
-    } */
-    .image img{
-        height: 50vh;
-        padding-right: 3em;
-        object-fit: contain;
-    }
-    .image{
-        display: flex;
-        flex: 0 1 100%;
-        height:fit-content;
-    }
-    .hook h3{
-        font-size: 2rem;
-    }
-    
-    .hook p{
-        font-size: 1rem;
-    }
-    .content{
-        flex-direction: column-reverse;
-
-    }
-    .hook{
-        width: 100%;
-        flex: 0 0 30%;
-    }
-}
-
 @media screen and (max-width: 375px) {
     h2{
         font-size: .9rem;
