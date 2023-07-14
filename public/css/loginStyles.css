@@ -21,8 +21,9 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--main-bg-color); 
-    border-radius: 30px;
-    width: 33%;
+    border-radius: 20px;
+    width: 300px;
+    padding: 2rem 0;
 }
 .mainDisplay form{
     display:flex;
@@ -33,22 +34,22 @@ body{
 .mainDisplay form input{
     padding: 20px;
     margin: 5px;
-    background-color: #FDEEDC;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     color: black;
     border:none
 }
 ::placeholder{
-    color: #E38B29;
+    color: var(--main-text-color);
     font-style: sans-serif;
 }
 .mainDisplay form button{
-    width: 80%;
+    width: 75%;
     padding: 10px;
     margin: 5px;
-    background-color: #E38B29;
-    color: #E0E1DD;
-    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
     font-size: sans-serif;
     border: none
 }
@@ -60,6 +61,10 @@ h1{
 span{
     color: var(--main-text-color);
     margin-bottom: 2rem;
+}
+span a{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 @media screen and (max-width:510px){
