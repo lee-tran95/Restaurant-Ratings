@@ -23,7 +23,7 @@ body{
     background-color: var(--main-bg-color); 
     border-radius: 20px;
     width: 400px;
-    padding: 2rem 0;
+    padding: 2rem 0 1rem 0;
 }
 .mainDisplay form{
     display:flex;
@@ -68,8 +68,11 @@ span a{
     text-decoration: none;
     color: var(--primary-color);
 }
-#errors{
-    
+#home{
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--main-text-color);
+    margin-top: 10px;
 }
 @media screen and (max-width:510px){
     .mainDisplay{
