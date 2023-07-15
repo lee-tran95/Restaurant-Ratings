@@ -68,7 +68,9 @@ span a{
     text-decoration: none;
     color: var(--primary-color);
 }
-
+#errors{
+    
+}
 @media screen and (max-width:510px){
     .mainDisplay{
         flex-direction: column;

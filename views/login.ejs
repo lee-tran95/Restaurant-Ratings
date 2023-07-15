@@ -8,11 +8,6 @@
     <link rel="stylesheet" href='css/loginStyles.css'>
 </head>
 <body>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
     <% if (locals.messages.info) { %>
         <% messages.info.forEach( el => { %>
             <div><%= el.msg %></div>
@@ -26,6 +21,11 @@
                 <input type="password" placeholder="Password" name = "password">
                 <button type="submit">Sign In</button>
             </form>
+            <% if (locals.messages.errors) { %>
+                <% messages.errors.forEach( el => { %>
+                    <div id="errors"><%= el.msg %></div>
+                <% }) %>    
+            <% } %>
         </div>
     </div>
 </body>
