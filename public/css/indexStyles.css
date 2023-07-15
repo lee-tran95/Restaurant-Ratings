@@ -52,7 +52,6 @@ h2{
     border-radius: 15px;
     padding: 5px 30px;
     margin-left: 30px;
-    background-color: var(--secondary-bg-color);
 }
 .topNav a{
     color: var(--main-text-color);
