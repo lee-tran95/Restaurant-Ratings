@@ -33,14 +33,14 @@ body{
 }
 .mainSignupRight{
     place-self: center;
-    display:flex;
-    flex: 0 1 55%;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: var(--main-bg-color); 
+    border-radius: 20px;
     width: 400px;
-    background-color: var(--main-bg-color);
+    padding: 1rem 0;
 }
 .mainSignupRight form{
     display:flex;
@@ -59,22 +59,22 @@ body{
     border:none
 }
 ::placeholder{
-    color: #E38B29;
+    color: var(--main-text-color);
     font-style: sans-serif;
 }
 .mainSignupRight form button{
     width: 100%;
     padding: 10px;
     margin: 5px;
-    background-color: #E38B29;
-    color: #E0E1DD;
-    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
     font-size: sans-serif;
-    border: none;
+    border: none
 }
 h1{
     font-size: 3rem;
-    color:#E0E1DD;
+    color: var(--main-text-color);
     font-style: sans-serif;
 }
 img{
