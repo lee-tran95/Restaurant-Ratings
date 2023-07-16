@@ -1,5 +1,15 @@
-html, body {
-    margin: 0; height: 100vh; overflow: hidden
+:root{
+    --main-bg-color: white;
+    --secondary-bg-color: #E2E8F0;
+    --primary-color: #3d5a80;
+    --main-text-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html, body {
+    height: 100vh;
 }
 body{
     padding: 0;
@@ -7,11 +17,11 @@ body{
     justify-content: center;
     align-items: center;
     flex:1;
-    background-color: #F1A661;
+    background-color: var(--secondary-bg-color);
 }
 .mainDisplay{
-    display:flex;
-    flex:1;
+    display:grid;
+    grid-template-columns: 45% 55%;
 }
 .mainSignupLeft{
     display:flex;
@@ -22,34 +32,38 @@ body{
     flex-direction: column;
 }
 .mainSignupRight{
+    place-self: center;
     display:flex;
     flex: 0 1 55%;
     align-self: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 400px;
+    background-color: var(--main-bg-color);
 }
 .mainSignupRight form{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 350px;
 }
 .mainSignupRight form input{
     width: 100%;
     padding: 20px;
     margin: 5px;
-    background-color: #FDEEDC;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
-    color:black;
-    border: none;
+    color: black;
+    border:none
 }
 ::placeholder{
     color: #E38B29;
     font-style: sans-serif;
 }
 .mainSignupRight form button{
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin: 5px;
     background-color: #E38B29;
