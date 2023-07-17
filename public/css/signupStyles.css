@@ -12,24 +12,20 @@
     height: 100vh;
 }
 body{
-    padding: 0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex:1;
     background-color: var(--secondary-bg-color);
 }
 .mainDisplay{
     display:grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 60% 40%;
+    height: 100vh;
 }
 .mainSignupLeft{
-    display:flex;
-    flex: 0 1 45%;
+    /* display:flex;
     align-self: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
+    height: 100vh;
 }
 .mainSignupRight{
     place-self: center;
@@ -80,6 +76,8 @@ h1{
 }
 img{
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    padding: 0 1rem;
+    object-fit: contain;
 }
 
