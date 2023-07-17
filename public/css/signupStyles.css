@@ -16,17 +16,9 @@ body{
 }
 .mainDisplay{
     display:grid;
-    grid-template-columns: 60% 40%;
     height: 100vh;
 }
-.mainSignupLeft{
-    /* display:flex;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-    height: 100vh;
-}
+
 .mainSignupRight{
     place-self: center;
     display: flex;
@@ -73,11 +65,5 @@ h1{
     color: var(--main-text-color);
     font-style: sans-serif;
     margin-bottom: 2rem;
-}
-img{
-    max-width: 100%;
-    height: 100%;
-    padding: 0 1rem;
-    object-fit: contain;
 }
 
