@@ -67,3 +67,17 @@ h1{
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width:510px){
+    h1{
+        font-size: 2.0rem;
+    }
+    
+    .mainSignupRight{
+        width: 300px;
+        padding: 1.5rem 0 1rem 0;
+    }
+    .mainSignupRight form{
+        width: 250px;
+    }
+}
+
