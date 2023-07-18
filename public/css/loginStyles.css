@@ -76,10 +76,10 @@ span a{
 }
 @media screen and (max-width:510px){
     .mainDisplay{
-        flex-direction: column;
+        width: 300px;
+        padding: 1.5rem 0 1rem 0;
     }
-    .image{
-        margin-top: 10px;
+    .mainDisplay form{
+        width: 250px;
     }
-
 }
