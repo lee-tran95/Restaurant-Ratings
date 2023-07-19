@@ -66,6 +66,10 @@ h1{
     font-style: sans-serif;
     margin-bottom: 2rem;
 }
+span a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
 
 @media screen and (max-width:510px){
     h1{
