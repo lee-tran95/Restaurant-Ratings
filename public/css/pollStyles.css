@@ -14,12 +14,14 @@
 .container{
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-bg-color);
 }
 
 header{
     display: flex;
     align-items: center;
     padding: 1.5rem 1rem;
+    background-color: var(--main-bg-color);
 }
 
 h1{
@@ -65,9 +67,9 @@ a{
 
 h2{
     text-align: center;
-    color: white;
+    color: var(--main-text-color);
     font-size: 3rem;
-    background-color: orange;
+    background-color: var(--secondary-bg-color);
     padding: 2rem;
     margin-bottom: 10px;
 }
