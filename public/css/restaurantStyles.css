@@ -56,9 +56,18 @@ nav ul li {
     margin-left: 30px;
 }
 
- nav a{
+nav a{
     color: var(--main-text-color);
     text-decoration: none;
+}
+nav ul li  a:hover{
+    color: var(--primary-color);
+}
+.logout-button{
+    cursor: pointer;
+}
+.logout-button:hover{
+    color: var(--primary-color)
 }
 #create-poll{
     background-color: var(--primary-color);
@@ -66,7 +75,9 @@ nav ul li {
 #create-poll a{
     color: white;
 }
-
+#create-poll:hover{
+    background-color:#2b3f5a;
+}
 .reset-button-style{
     background-color: transparent;
     border-width: 0;
