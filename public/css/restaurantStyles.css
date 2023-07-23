@@ -370,6 +370,11 @@ label{
         margin-right: 15px;
         margin-bottom: 10px;
     }
+    #addRestaurantDialog{
+        position: relative;
+        width: 100%;
+
+    }
     #submitButton{
         font-size: 1rem;
         border-radius: 20px;
@@ -385,5 +390,8 @@ label{
     }
     #rating-field{
         width: 25px;
+    }
+    .restaurants{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
