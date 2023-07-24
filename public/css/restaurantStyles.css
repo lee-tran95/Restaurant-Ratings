@@ -382,11 +382,11 @@ label{
         width: 100%;
     }
     #closeDialog{
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-right: 15px;
     }
     .formSub h3{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     #rating-field{
         width: 25px;
