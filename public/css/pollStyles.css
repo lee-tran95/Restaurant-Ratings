@@ -26,7 +26,7 @@ header{
 
 h1{
     font-size: 3.5rem;
-    color: orange;;
+    color: var(--main-text-color);
 }
 .fa-bars{
     display: none;
@@ -45,7 +45,6 @@ nav ul li {
     list-style: none;
     font-size: 2rem;
     border-radius: 10px;
-    border: 5px solid orange;
     padding: 5px 30px;
     margin-left: 30px
 }
@@ -92,9 +91,10 @@ h2{
     flex: 1;
     flex-direction: column;
     align-items: center;
-    background-color: orange;
+    background-color: var(--main-bg-color);
+    box-shadow: -5px 0px #ee6c4d;
     border-radius: 10px;
-    word-break: break-all;
+    word-break: normal;
     padding: 15px 0px 5px 5px;
 }
 
