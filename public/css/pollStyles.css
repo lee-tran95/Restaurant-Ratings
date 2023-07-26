@@ -11,10 +11,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--secondary-bg-color);
+}
 .container{
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-bg-color);
+    height: 100vh;
 }
 
 header{
