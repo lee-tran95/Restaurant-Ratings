@@ -23,14 +23,21 @@ body{
 
 header{
     display: flex;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    background-color: var(--main-bg-color);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    background-color: white;
 }
-
+.fa-bars{
+    display: none;
+}
+.active{
+    display: block;
+}
 h1{
     font-size: 3.5rem;
     color: var(--main-text-color);
+    padding: 5px 10px;
 }
 .fa-bars{
     display: none;
