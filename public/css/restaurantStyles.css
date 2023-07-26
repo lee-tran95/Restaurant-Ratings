@@ -343,6 +343,9 @@ label{
         padding: 5px 15px;
         width: 35%;
     }
+    .restaurants{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
 }
 
 @media screen and (max-width: 375px) {
