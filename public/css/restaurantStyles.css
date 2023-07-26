@@ -170,7 +170,7 @@ h2{
 }
 
 #addRestaurantDialog{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -348,6 +348,34 @@ label{
     }
 }
 
+@media screen and (max-width:550px){
+    #showDialog{
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    #addRestaurantDialog{
+        width: 100%;
+
+    }
+    #submitButton{
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    #closeDialog{
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+    .formSub h3{
+        font-size: 1.5rem;
+    }
+    #rating-field{
+        width: 25px;
+    }
+}
 @media screen and (max-width: 375px) {
     h1{
         font-size: 1.5rem;
@@ -375,27 +403,6 @@ label{
         padding: 5px 10px;
         margin-right: 15px;
         margin-bottom: 10px;
-    }
-    #addRestaurantDialog{
-        position: relative;
-        width: 100%;
-
-    }
-    #submitButton{
-        font-size: 1rem;
-        border-radius: 20px;
-        padding: 5px 10px;
-        width: 100%;
-    }
-    #closeDialog{
-        font-size: 1.5rem;
-        margin-right: 15px;
-    }
-    .formSub h3{
-        font-size: 1.5rem;
-    }
-    #rating-field{
-        width: 25px;
     }
     .restaurants{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
