@@ -33,7 +33,7 @@ module.exports = {
     resetVote: async(req,res) =>{
         try{
             await Restaurant.updateMany({userId: req.body._userId}, {
-                $set: {votes: 1}
+                $set: {votes: 0}
             })
             console.log('Votes resetted')
             res.json('Votes resetted')
